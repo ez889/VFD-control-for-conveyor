@@ -22,6 +22,7 @@ var_output
     VFD_start: BOOL;                //command for VFD
     fault_latch: BOOL;
     VFD_FaultReset: BOOL;           //command for reset VFD
+    Motor1_ReadyForNext: BOOL;
 end_var
 
 
@@ -191,3 +192,12 @@ end_case
         fault_latch:= TRUE;
         logika:= 40;
     end_if
+
+   Motor1_ReadyForNext:= FALSE;
+
+    IF logika=0
+        AND NOT fault_latch
+        AND Safety_OK
+        AND NOT VFD_Fault then
+        Motor1_ReadyForNext:= TRUE;
+    END_IF
