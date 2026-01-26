@@ -1,6 +1,8 @@
 # VFD-control-for-conveyor
 Project of VFD control for conveyor(simulation)
 
+ST code is contain all the logic for this application.
+LD scheme is contain some example of networks of this application.
 
 Motor 1: VFD-controlled conveyor with auto/manual mode, speed control, jam detection, and safety handling.
 
