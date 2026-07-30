@@ -1,4 +1,5 @@
 # VFD-control-for-conveyor
+version 1.0
 Project of VFD control for conveyor(simulation)
 
 ST code is contain all the logic for this application.
